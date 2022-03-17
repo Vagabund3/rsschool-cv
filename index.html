@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="cv">
+        <header>
+            <h1>Ruslan Lazarev</h1>
+            <h2>Junior Web developer</h2>
+        </header>
+        <main>
+            <div class="contacts">
+                <section>
+                    <h2 style="color: #000;">
+                        Contact information
+                    </h2>
+                </section>
+                <div class="living_place">
+
+                    <div class="country_city">
+                        <h3> Country:</h3>
+                        <div>
+                            <ul>
+                                <li>Russian Federation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="country_city">
+                        <h3>Town:</h3>
+                        <ul>
+                            <li>Novorossyisk </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h3>Contact me:</h3>
+                    <div class="social_contact">
+                        <ul>
+                            <li>
+                                Email: <a href="mailto:hi.pro.rus231997@gmail.com">rus231997@gmail.com</a>
+                            </li>
+                            <li>
+                                Discord: Ruslan Lazarev (@vagabund3)
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="experience">
+                <section>
+                    <h2 style="color: #000;">Experience</h2>
+                    <p>Intern frontend-developer: 2021-05-10 – 2021-08-20 <br> Worked on creating an editor for a chat
+                        bot
+                        based on modular framework for visual programming: <a href="https://rete.js.org/#/">Rete.JS</a>
+                    </p>
+                </section>
+            </div>
+            <hr>
+            <div class="courses">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Completed courses</th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td>2020-02-01 – 2019-03-01 </td>
+                        <td>
+                            <a href="https://www.freecodecamp.org/learn/">JavaScript algorithms and data
+                                structures
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2019-08-10 – 2019-08-19</td>
+                        <td>
+                            <a href="https://www.sololearn.com/Certificate/1014-14160181/jpg/">HTML Basics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2020-03-15 – 2020-03-21 </td>
+                        <td>
+                            <a href="https://www.sololearn.com/Certificate/1023-14160181/jpg/">CSS Basics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2020-04-10 – 2020-04-24 </td>
+                        <td>
+                            <a href="https://www.sololearn.com/Certificate/1024-14160181/jpg/">JS Basics</a>
+                        </td>
+                    </tr>
+                    <tr>
+                </table>
+                <hr>
+            </div>
+            <div class="code_example">
+                <section class="git_src">
+                    <h2 style="color: #000;">Code Example</h2>
+                    <p> <a href="https://github.com/Vagabund3/React-project">Training project on React JS</a>
+                    </p>
+                    <p>Создаем функцию которая принимает на входе React компоненту</p>
+                    <pre class="hljs"
+                        style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(255, 255, 255); color: rgb(0, 0, 0);">  export const withAuthRedirect = (<span class="hljs-type" style="color: rgb(163, 21, 21);">Component</span>) =&gt; {
+                        <span class="hljs-class"><span class="hljs-keyword" style="color: rgb(0, 0, 255);">class</span> <span class="hljs-title" style="color: rgb(163, 21, 21);">RedirectComponent</span> <span class="hljs-keyword" style="color: rgb(0, 0, 255);">extends</span> <span class="hljs-title" style="color: rgb(163, 21, 21);">React</span>.<span class="hljs-title" style="color: rgb(163, 21, 21);">Component</span> </span>{
+                          render() {
+                            <span class="hljs-keyword" style="color: rgb(0, 0, 255);">if</span> (!<span class="hljs-keyword" style="color: rgb(0, 0, 255);">this</span>.props.isAuth) <span class="hljs-keyword" style="color: rgb(0, 0, 255);">return</span> &lt;<span class="hljs-type" style="color: rgb(163, 21, 21);">Redirect</span> to={<span class="hljs-string" style="color: rgb(163, 21, 21);">"/login"</span>} /&gt;; 
+                            <span class="hljs-keyword" style="color: rgb(0, 0, 255);">return</span> &lt;<span class="hljs-type" style="color: rgb(163, 21, 21);">Component</span> {...<span class="hljs-keyword" style="color: rgb(0, 0, 255);">this</span>.props} /&gt;;
+                          }
+                        }
+                      <span class="hljs-comment" style="color: green;">//когда пользователь вызывет withAuthRedirect он получает 2 компоненты</span>
+                        let <span class="hljs-type" style="color: rgb(163, 21, 21);">ConnectedAuthRedirectComponent</span> = connect(mapStateToPropsForRedirect)(
+                          <span class="hljs-type" style="color: rgb(163, 21, 21);">RedirectComponent</span>
+                        );
+                      
+                        <span class="hljs-keyword" style="color: rgb(0, 0, 255);">return</span> <span class="hljs-type" style="color: rgb(163, 21, 21);">ConnectedAuthRedirectComponent</span>;
+                      };</pre>
+
+                </section>
+            </div>
+            <hr>
+            <div class="language">
+                <section>
+                    <h2 style="color: #000;">Language</h2>
+                    <p>English: A2/B1
+                    </p>
+                </section>
+            </div>
+            <hr>
+            <div class="skills">
+                <section>
+                    <h2 style="color: #000;">Programming Languages and skills</h2>
+                    <p>HTML, CSS, JS, experience with Git and its environment.<br>Understanding Browser Client
+                        Interaction: (HTTP request), AJAX requests.<br> I spend a lot of time learning React applying it
+                        in
+                        the development of educational project.<br> Also had experience with Vue.JS during
+                        internship.<br>
+                        I try to write clean and readable code with comments. Can solve problems - can google,
+                        quickly
+                        find suitable solutions and apply them.
+                    </p>
+                </section>
+            </div>
+            <hr>
+    </div>
+    </main>
+    <footer>
+        <div class="footer_content">
+            <a href="https://github.com/Vagabund3">
+                <i class="fab fa-github" style='font-size:30px'>
+                </i>
+                My GitHub
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
+
