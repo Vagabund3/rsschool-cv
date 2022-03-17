@@ -1,6 +1,6 @@
 # **Ruslan** **Lazarev**
 
-#### Junior Frontend Developer
+####Junior Frontend Developer
 ---
 
 ## _Contact information_
@@ -76,4 +76,13 @@ ChatKeeperBot: Worked on creating an editor for a chat bot based on modular fram
 
 ---
 
- 
+## _Languages_
+
+**English**: A2/B1
+
+---
+
+## _Programming Languages and skills_
+
+HTML, CSS, JS, experience with Git and its environment, understanding Browser Client Interaction:(HTTP request), AJAX requests. I spend a lot of time learning React applying it in the development of educational project. Also had experience with Vue.JS during internship.
+I try to write clean and readable code with comments. I can solve problems - I can google, quickly find suitable solutions and apply them.
